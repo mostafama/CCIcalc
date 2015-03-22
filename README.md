@@ -5,23 +5,20 @@ Programmed by: Mostafa Mohamed on March 21, 2015
 
 The repository contains a function written in Python programming language in the file "ccicalc.py".
 To call it you must pass in the patient ages as the first parameter then all patient conditions as a list of parameters as follows:
-
-'''
+```Python
 	ccicalc(age, *args)
-'''    
-
+```    
 The conditions can be passed as a one string or list of strings as:
-
-'''
+```Python
 	e.g.: ccicalc(55, 'MI, CVA, dementia, COPD')
 
 	or    ccicalc(55, 'MI', 'CVA', 'dementia', 'COPD')
-''' 
+``` 
 The function will clean-up the parameters list to remove duplicates and unknown inputs.
 The function returns the result in text form as follows:
-
+```
 	"Charlson Comorbidity Index (CCI) Score: 4 Age factored in: 5."
-  
+```
 The list of input arguments for patient conditions is divided into 4 sets as listed below:
 Parameter   	Description
 -------------------------------------------------------------------------------
