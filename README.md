@@ -1,10 +1,14 @@
 # CCIcalc
 Charlson Comorbidity Index (CCI) Score Calculator
+
 Estimating Prognosis for Dialysis Patients
+
 Programmed by: Mostafa Mohamed on March 21, 2015
+
 Live example is setup on Google could engine at: http://main-element-89114.appspot.com/?age=55&factors=MI,CVA,dementia,COPD 
 
 The repository contains a function written in Python programming language in the file "ccicalc.py".
+
 To call it you must pass in the patient ages as the first parameter then all patient conditions as a list of parameters as follows:
 ```Python
 	ccicalc(age, *args)
@@ -16,6 +20,7 @@ The conditions can be passed as a one string or list of strings as:
 	or    ccicalc(55, 'MI', 'CVA', 'dementia', 'COPD')
 ``` 
 The function will clean-up the parameters list to remove duplicates and unknown inputs.
+
 The function returns the result in text form as follows:
 ```
 	"Charlson Comorbidity Index (CCI) Score: 4 Age factored in: 5."
